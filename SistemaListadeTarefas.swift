@@ -92,7 +92,7 @@ while true {
 
     if IdxEditar >= lista.count {
         print("Exercicio não existe")
-        break
+        continue
     } else {
         print("Informe o novo exercicio: ")
         guard let NovoEx = readLine() 
@@ -102,7 +102,7 @@ while true {
     
     //////////////////////////////////////////////////
     
-    case 5: print("saindo"); exit(1)
+    case 5: print("saindo"); exit(0)
     default: print("Opção inválida")
     }
 }
